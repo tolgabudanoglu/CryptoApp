@@ -48,4 +48,5 @@ abstract class BaseFragment<viewBinding :ViewBinding, viewModel : ViewModel>(
     }
 
 
+    abstract fun observeEvents()
 }

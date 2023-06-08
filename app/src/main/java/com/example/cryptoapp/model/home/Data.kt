@@ -6,8 +6,6 @@ import com.google.gson.annotations.SerializedName
 data class Data(
     @SerializedName("circulating_supply")
     val circulatingSupply: Double?,
-    @SerializedName("cmc_rank")
-    val cmcRank: Int?,
     @SerializedName("date_added")
     val dateAdded: String?,
     @SerializedName("id")
@@ -20,8 +18,7 @@ data class Data(
     val maxSupply: Long?,
     @SerializedName("name")
     val name: String?,
-    @SerializedName("num_market_pairs")
-    val numMarketPairs: Int?,
+
     @SerializedName("platform")
     val platform: Platform?,
     @SerializedName("quote")
