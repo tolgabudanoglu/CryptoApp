@@ -8,9 +8,7 @@ import com.example.cryptoapp.BuildConfig
 import kotlinx.coroutines.NonCancellable.start
 
 
-/**
- * Created by @Emre Özcan on 19.04.2022
- */
+
 
 fun ImageView.loadImage(url: String?){
     val placeholder = createPlaceHolder(this.context)
