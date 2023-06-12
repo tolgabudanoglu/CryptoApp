@@ -1,5 +1,6 @@
 package com.example.cryptoapp.ui.home
 
+import android.os.Bundle
 import android.widget.Toast
 import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
@@ -20,8 +21,13 @@ class HomeFragment : BaseFragment<FragmentHomeBinding, HomeViewModel>(
 ) {
     override val viewModel by viewModels<HomeViewModel>()
 
-    override fun onCreateFinsihed() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
         viewModel.getData(API_KEY,LIMIT)
+    }
+
+    override fun onCreateFinsihed() {
+
     }
 
     override fun initializeListeners() {
